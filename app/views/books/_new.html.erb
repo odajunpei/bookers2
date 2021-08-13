@@ -1,0 +1,13 @@
+<h1>ユーザ情報・新規投稿</h1>
+<%= attachment_image_tag book, :image %>
+  <p>image：<%= image_tag('sample-author1.jpg') %></p>
+  <p>name：<%= book.user.name %></p>
+  <p>introduction：<%= book.introduction %></p>
+<% end %>
+
+<%= form_with model: book, local:true do |f| %>
+  <h4>Title</h4>
+  <%= f.attachment_field : title %>
+  <h4>Opinion</h4>
+  <%= f.attachment_field : opinion %>
+<% end %>
