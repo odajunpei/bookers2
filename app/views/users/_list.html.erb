@@ -1,5 +1,17 @@
-<div class="profile-container">
-<h3 class="profile-name"><%= user.name %></h3>
-  
-    <p><%= link_to 'プロフィール編集', edit_user_path(user) %></p>
-</div>
+  <h3>User info</h3>
+   <p><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></p>
+   <table class="table">
+       <tbody>
+           <tr></tr>
+           <tr>
+               <th>name</th>
+               <th class="profile-name"><%= user.name %></th>
+            </tr>
+            <tr>
+               <th>introduction</th>
+               <th></th>
+            </tr>
+        </tbody>
+    </table>
+  <p><%= link_to 'プロフィール編集', edit_user_path(user) %></p>
+<p><%= render 'books/list', book: @book %></P>
