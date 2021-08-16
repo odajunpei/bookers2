@@ -4,31 +4,28 @@
         <div class= "col-md-3">
             <p><%= render 'users/list', user: current_user %></p>
         </div>
-    </div>
-    <div class="col-md-8 offset-md-1">
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Opinion</th>
-            <th colspan="3"></th>
-          </tr>
-        </thead>
-        <tbody>
+        <div class="col-md-8 offset-md-1">
+          <h2>Books</h2>
+          <table>
+            <thread>
+              <tr>
+                <th>Title</th>
+                <th>Opinion</th>
+                <th colspan="3"></th>
+              </tr>
+            </thread>
+            <tbody>  
       <% @books.each do |book| %>
-          <tr>
-            <td><%= book.title %></td>
-            <td><%= book.body %></td>
-            <td><%= link_to "edit", edit_book_path(book.id) %></td>
-            <td><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %> </td>
-          </tr>
+              <tr>
+                <td><%= book.title %></td>
+                <td><%= book.body %></td>
+                <td><%= link_to "edit", edit_book_path(book.id) %></td>
+                <td><%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %> </td>
+              </tr>
       <% end %>
-        </tbody>
-      </table>
+            </tbody>
+          </table>
+      </div>
     </div>
-</div>
-
-
-
-  </body>
-  </html>
+  </div>
+  

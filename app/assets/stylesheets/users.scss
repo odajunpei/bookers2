@@ -4,3 +4,19 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ 
+ td {
+    display: table-cell;
+    vertical-align: inherit;
+ }
+    
+  thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
