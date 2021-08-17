@@ -13,11 +13,11 @@
  *= require_tree .
  *= require_self
  */
- 
+
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
- 
+
 
 tr {
     display: table-row;
@@ -58,7 +58,44 @@ label {
     margin-left: -15px;
 }
 
-
 #error_explanation {
     color: red;
 }
+
+#notice {
+    color: green;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.outer{
+    text-align: center;
+}
+.inner{
+   display:inline-block;
+   text-align: left;
+}
+
