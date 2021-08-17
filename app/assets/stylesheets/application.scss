@@ -93,9 +93,36 @@ table {
 
 .outer{
     text-align: center;
+
 }
 .inner{
-   display:inline-block;
+   display: inline-block;
    text-align: left;
+}
+
+.login{
+    margin-bottom:20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align:middle;
+    width: 50%;
+    height:30px;
+    background-color :cadetblue;
+    font-color : white;
+}
+
+.signup{
+    display: inline-block;
+    text-align: center;
+    vertical-align:middle;
+    width: 50%;
+    height:30px;
+    background-color :forestgreen;
+    font-color :white;
+}
+
+.about{
+    margin-top :15px;
+    text-align : center;
 }
 
