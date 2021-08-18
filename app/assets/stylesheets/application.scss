@@ -91,27 +91,27 @@ table {
     border-collapse: collapse;
 }
 
-.outer{
+.outer {
     text-align: center;
 
 }
-.inner{
+.inner {
    display: inline-block;
    text-align: left;
 }
 
-.login{
+.login {
     margin-bottom:20px;
     display: inline-block;
     text-align: center;
     vertical-align:middle;
     width: 50%;
     height:30px;
-    background-color :cadetblue;
+    background-color :lightblue;
     font-color : white;
 }
 
-.signup{
+.signup {
     display: inline-block;
     text-align: center;
     vertical-align:middle;
@@ -121,8 +121,22 @@ table {
     font-color :white;
 }
 
-.about{
+.about {
     margin-top :15px;
     text-align : center;
 }
 
+.nav-item {
+    display: inline;
+}
+
+i {
+　margin-right: 10px;
+  vertical-align: middle;
+}
+
+.fa, .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    line-height: normal;
+}
