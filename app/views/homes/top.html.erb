@@ -1,4 +1,4 @@
-<p id="notice"></p>
+<%= render 'layouts/notifications' %>
  <div class="outer">
   <div class="inner">
       <h1>welcome to <i class="fas fa-book"></i><strong>Bookers</strong>!!</h1>
@@ -10,7 +10,7 @@
       <div class="login">
         <%= link_to "Log In", new_user_session_path, class: 'nav-link text-dark' %>
       </div>
-      
+
       <div class="signup">
         <%= link_to "Sign Up", new_user_registration_path, class: 'nav-link text-dark' %>
       </div>
