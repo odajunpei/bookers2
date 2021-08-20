@@ -2,9 +2,13 @@
     <%= form_with model:book, local:true do |f| %>
         <div class="form-group">
           <p><label for="book_title">Title</label></p>
-          <p><%= f.text_field :title %></P>
+          <div class="form-dontrol">
+            <p><%= f.text_field :title %></P>
+          </div>
           <p><label for="book_body">Opinion</label></p>
-          <p><%= f.text_area :body %></P>
+          <div class="form-dontrol">
+            <p><%= f.text_area :body %></P>
+          </div>
       <%= f.submit 'Create Book' %>
         </div>
     <% end %>

@@ -1,4 +1,4 @@
-user.show
+user show
 <p id="notice"><%= notice %></p>
 <div class="container px5 px-sm-0">
   <div id="error_explanation">
@@ -15,8 +15,9 @@ user.show
             <p><%= render 'books/list', book: @book %></P>
         </div>
         <div class="col-md-8 offset-md-1">
+          <p></p>
           <h2>Books</h2>
-          <table>
+          <table class="table table-hover table-inverse">
             <thread>
               <tr>
                 <th></th>
