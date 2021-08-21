@@ -12,7 +12,7 @@ book.show
     </div>
     <div class="row">
         <div class= "col-md-3">
-            <p><%= render 'users/info', user: current_user %></p>
+            <p><%= render 'users/info', user: @user %></p>
             <p><%= render 'books/list', book: @book %></P>
         </div>
         <div class="col-md-8 offset-md-1">

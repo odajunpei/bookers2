@@ -13,16 +13,14 @@ user edit
     <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-5 mx-auto">
       <h2>User info</h2>
       <%= form_with model:@user, local:true do |f| %>
-      <div class="form-group">
       <p><label for="inputName">Name</label></p>
-      <p><%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前" %></p>
+      <p><%= f.text_field :name,class:"form-control form-group", autofocus: true, id:"inputName", placeholder:"名前" %></p>
       <p><label for="inputImage">Image</label></P>
-      <p><%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %></p>        
+      <p><%= f.attachment_field :profile_image, class:"input-profile-image" %></p>
       <p><label for="inputIntroduction">introduction</label></p>
-      <p><%= f.text_field :introduction, autofocus: true, id:"inputIntroduction", placeholder:"自己紹介文" %></p>
-      <%= f.submit "Update User" %>
+      <p><%= f.text_field :introduction,class:"form-control form-group", autofocus: true, id:"inputIntroduction", placeholder:"自己紹介文" %></p>
+      <%= f.submit "Update User", class:"btn-edit" %>
       <% end %>
-      </div> 
       </div>
     </div>
   </div>

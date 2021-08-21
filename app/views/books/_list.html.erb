@@ -1,14 +1,9 @@
     <h2>New book</h2>
     <%= form_with model:book, local:true do |f| %>
-        <div class="form-group">
-          <p><label for="book_title">Title</label></p>
-          <div class="form-dontrol">
-            <p><%= f.text_field :title %></P>
-          </div>
-          <p><label for="book_body">Opinion</label></p>
-          <div class="form-dontrol">
-            <p><%= f.text_area :body %></P>
-          </div>
-      <%= f.submit 'Create Book' %>
-        </div>
+      <label for="book_title">Title</label>
+      <%= f.text_field :title, class: "form-control form-group"%>
+      <label for= "book_body">Opinion</label>
+      <%= f.text_area :body, class: "form-control form-group" %>
+      <%= f.submit 'Create Book', class: "btn btn-success"  %>
+        
     <% end %>

@@ -15,11 +15,12 @@ book.edit
       <%= form_with model:@book, local:true do |f| %>
       <div class="form-group">
         <p><label for="inputName">Title</label></p>
-        <p><%= f.text_field :title, autofocus: true, id:"inputTitle", placeholder:"タイトル" %></p>
-       <p><label for="inputOpinion">Opinion</label></p>
-        <p><%= f.text_field :body, autofocus: true, id:"inputBody", placeholder:"Opinion" %></p>
-      <%= f.submit "Update Book" %></br>
+        <p><%= f.text_field :title, class:"form-control form-group",autofocus: true, id:"inputTitle", placeholder:"タイトル" %></p>
+        <p><label for="inputOpinion">Opinion</label></p>
+        <p><%= f.text_field :body, class:"form-control form-group",autofocus: true, id:"inputBody", placeholder:"Opinion" %></p>
+      <%= f.submit "Update Book", class:"btn" %></br>
       <% end %>
+      <p></p>
       <span><%= link_to "Show", book_path(@book), class: 'd-inline-block' %></span>
       <span>|</span>
       <span><%= link_to "Back", books_path, class: 'd-inline-block' %></span>
